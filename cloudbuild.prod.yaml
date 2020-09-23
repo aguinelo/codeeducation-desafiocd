@@ -7,7 +7,7 @@ steps:
   
   - id: "Image Build from Dockerfile.prod"
     name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/desafiocd:$SHORT_SHA', '-f', 'Dockerfile.prod', './app']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/desafiocd:$SHORT_SHA', '-f', './app/Dockerfile.prod', './app']
 
   - id: "Pushing Image"
     name: 'gcr.io/cloud-builders/docker'
