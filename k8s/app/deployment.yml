@@ -14,6 +14,6 @@ spec:
       spec:
         containers:
         - name: app
-          image: aguinelo/desafiocd
+          image: img-app-deployment
           ports:
           - containerPort: 8000
