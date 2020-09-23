@@ -19,5 +19,5 @@ steps:
     args:
       - '-c'
       - |
-        sed 's#img-app-deployment#gcr.io/$PROJECT_ID/desafiocd:$SHORT_SHA#g' .k8s/deployment.yml .k8s/deployment-new.yml;
-        cat .k8s/deployment-new.yml;
+        sed 's#img-app-deployment#gcr.io/$PROJECT_ID/desafiocd:$SHORT_SHA#g' .k8s/app/deployment.yml .k8s/app/deployment-new.yml;
+        cat .k8s/app/deployment-new.yml;
