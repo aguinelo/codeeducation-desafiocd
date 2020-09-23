@@ -12,7 +12,3 @@ steps:
   - id: "Pushing Image"
     name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/desafiocd:$SHORT_SHA']
-    
-  images:
-  
-    - 'gcr.io/$PROJECT_ID/desafiocd:latest'
